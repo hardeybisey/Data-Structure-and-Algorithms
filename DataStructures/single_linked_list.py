@@ -10,6 +10,9 @@ class LinkedList:
         self.tail = None
         self.length = 0
 
+    def __str__(self):
+        return str(self.__dict__)
+
     def append(self, data):
         new_node = Node(data)
         if self.head is None:
@@ -92,6 +95,8 @@ linkedlist.append(50)
 linkedlist.prepend(5)
 linkedlist.prepend(1)
 linkedlist.insert(3, 90)
+linkedlist.insert(2, 60)
+linkedlist.insert(5, 70)
 linkedlist.remove(0)
 print(linkedlist.print_list())
 linkedlist.reverse()

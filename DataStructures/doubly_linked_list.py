@@ -11,6 +11,9 @@ class DoublyLinkedList:
         self.tail = None
         self.length = 0
 
+    def __str__(self):
+        return str(self.__dict__)
+
     def append(self, data):
         new_node = Node(data)
         if self.head is None:
